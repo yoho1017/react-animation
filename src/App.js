@@ -51,21 +51,23 @@ function App() {
     useEffect(() => {
       const timeline = gsap.timeline({repeat:-1,ease:'none'})
       const timeline2= gsap.timeline({duration:1,ease:'none'})
-      timeline2.fromTo('.bnt2-block', {x:-100,opacity:0}, {duration: 0.5, x:0,opacity:1}) 
+      timeline2.fromTo('.bnt2-block', {x:-100,opacity:0}, {duration: 0.5, x:0,opacity:1,stagger:0.1}) 
       timeline.fromTo('span:nth-child(1)',
-      { x:-150,opacity:1},
-      { x:50,opacity:0})
+      { x:-55,opacity:1},
+      { x:100,opacity:0})
       .fromTo('span:nth-child(2)', 
-      { y:-45,opacity:1},
+      { y:-50,opacity:1},
       { y:50,opacity:0})
       .fromTo('span:nth-child(3)',
-      { x:50,opacity:1},
-      { x:-150,opacity:0})
+      { x:55,opacity:1},
+      { x:-100,opacity:0})
       .fromTo('span:nth-child(4)', 
-      { y:45,opacity:1},
+      { y:50,opacity:1},
       { y:-50,opacity:0})
     }, []);
    
+  const Bnt2=[...Array(3).keys()]
+
   return (
     <div className="App">
       <div className="header-block" ref={headerRef}>
@@ -75,13 +77,17 @@ function App() {
         <button className='bnt1' ref={btnRef} onClick={() => toggleBackground()}>change background</button>
       </div>
       <div className='header-block black'>
-        <div className='bnt2-block' ref={bnt02Ref}>      
+        {Bnt2.map((value)=>{
+          return(
+            <div className='bnt2-block'key={value} ref={bnt02Ref}>      
             <span></span>    
             <span></span>
             <span></span>
-            <span></span>      
-            <p>button02</p>              
+            <span></span> 
+            <p>button2_{value}</p>                                                  
         </div>
+          )
+        })}
       </div>
     </div>
   )
