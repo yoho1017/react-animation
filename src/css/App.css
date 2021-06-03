@@ -1,12 +1,19 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
 .App {
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-block {
-  width: 500px;
-  height: 500px;
+  margin: 5px;
+  width: 480px;
+  height: 400px;
   overflow: hidden;
   background-color: white;
   border: 1px solid black;
@@ -27,62 +34,80 @@
 }
 
 .bnt2-block {
-  background: linear-gradient(175deg, #401a9c 44%, rgba(47, 120, 255, 0.8) 74%);
-  background: -o-linear-gradient(175deg, #401a9c 44%, rgba(47, 120, 255, 0.8) 74%);
+  background: linear-gradient(0deg, #00acee 0%, rgba(2, 35, 223, 0.5) 100%);
   transform: translateY(250px);
   margin: 0 auto;
   width: 100px;
   height: 45px;
   border-radius: 3px;
-  overflow: hidden;
   position: relative;
 }
 
 .bnt2-block :hover {
-  background: linear-gradient(175deg, #00e7ff 35%, #004bc3 100%);
-  background: -o-linear-gradient(175deg, #00e7ff 35%, #004bc3 100%);
-  color: white;
-  text-shadow: 0 0 50px white;
+  background: linear-gradient(0deg, #02f3fb 0%, #6985ff 100%);
+  box-shadow: 0 0 5px #00e7ff, 0 0 15px #00e7ff;
+  margin: 0 auto;
   cursor: pointer;
+  position: absolute;
 }
 
-.bnt2-block span:nth-child(1) {
+.bnt2-block .bnt2List-block {
+  width: 100px;
+  height: 45px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.bnt2-block .bnt2List-block span:nth-child(1) {
   top: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(90deg, transparent, #03e9f4);
+  box-shadow: 0 0 5px #65f5f5;
   position: absolute;
+  z-index: 1;
 }
 
-.bnt2-block span:nth-child(2) {
+.bnt2-block .bnt2List-block span:nth-child(2) {
   right: 0;
   height: 100%;
-  width: 4px;
+  width: 3px;
   background: linear-gradient(180deg, transparent, #03e9f4);
+  box-shadow: 0 0 5px #65f5f5;
   position: absolute;
+  z-index: 1;
 }
 
-.bnt2-block span:nth-child(3) {
+.bnt2-block .bnt2List-block span:nth-child(3) {
   bottom: 0;
   width: 100%;
-  height: 4px;
+  height: 3px;
   background: linear-gradient(270deg, transparent, #03e9f4);
+  box-shadow: 0 0 5px #65f5f5;
   position: absolute;
+  z-index: 1;
 }
 
-.bnt2-block span:nth-child(4) {
+.bnt2-block .bnt2List-block span:nth-child(4) {
   left: 0;
   height: 100%;
-  width: 4px;
+  width: 3px;
   background: linear-gradient(360deg, transparent, #03e9f4);
+  box-shadow: 0 0 5px #65f5f5;
   position: absolute;
+  z-index: 1;
 }
 
-.bnt2-block p {
+.bnt2-block .bnt2List-block p {
+  width: 100px;
+  height: 45px;
   color: white;
   margin: 0 auto;
   padding: 10px;
-  text-align: center;
+  text-shadow: 0 0 3px #81d7ff, 0 0 5px #81d7ff, 0 0 8px #81d7ff;
+  position: absolute;
 }
 
 #coinBlock {

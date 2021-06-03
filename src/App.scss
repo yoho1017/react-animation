@@ -1,11 +1,17 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+}
 .App {
   text-align: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .header-block {
-  width: 500px;
-  height: 500px;
+  margin: 5px;
+  width: 480px;
+  height: 400px;
   overflow: hidden;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
@@ -25,63 +31,80 @@
   border-radius: 20px;
 }
 
+$width: 3px;
+$bntWidth: 100px;
+$bntHeight: 45px;
 .bnt2-block {
-  background: linear-gradient(175deg, rgba(64, 26, 156, 1) 44%, rgba(47, 120, 255, 0.8) 74%);
-  background: -moz-linear-gradient(175deg, rgba(64, 26, 156, 1) 44%, rgba(47, 120, 255, 0.8) 74%);
-  background: -webkit-linear-gradient(175deg, rgba(64, 26, 156, 1) 44%, rgba(47, 120, 255, 0.8) 74%);
-  background: -o-linear-gradient(175deg, rgba(64, 26, 156, 1) 44%, rgba(47, 120, 255, 0.8) 74%);
+  background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 35, 223, 0.5) 100%);
   transform: translateY(250px);
   margin: 0 auto;
-  width: 100px;
-  height: 45px;
+  width: $bntWidth;
+  height: $bntHeight;
   border-radius: 3px;
-  overflow: hidden;
   position: relative;
-  
+
   :hover {
-    background: linear-gradient(175deg, rgba(0, 231, 255, 1) 35%, rgba(0, 75, 195, 1) 100%);
-    background: -moz-linear-gradient(175deg, rgba(0, 231, 255, 1) 35%, rgba(0, 75, 195, 1) 100%);
-    background: -webkit-linear-gradient(175deg, rgba(0, 231, 255, 1) 35%, rgba(0, 75, 195, 1) 100%);
-    background: -o-linear-gradient(175deg, rgba(0, 231, 255, 1) 35%, rgba(0, 75, 195, 1) 100%);
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 50px rgb(255, 255, 255);
-    cursor: pointer;
-  }
-  span:nth-child(1) {
-    top: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, transparent, #03e9f4);
-    position: absolute;
-  }
-  span:nth-child(2) {
-    right: 0;
-    height: 100%;
-    width: 4px;
-    background: linear-gradient(180deg, transparent, #03e9f4);
-    position: absolute;
-  }
-  span:nth-child(3) {
-    bottom: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(270deg, transparent, #03e9f4);
-    position: absolute;
-  }
-
-  span:nth-child(4) {
-    left: 0;
-    height: 100%;
-    width: 4px;
-    background: linear-gradient(360deg, transparent, #03e9f4);
-    position: absolute;
-  }
-
-  p {
-    color: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgb(2, 243, 251) 0%, rgb(105, 133, 255) 100%);
+    box-shadow: 0 0 5px rgba(0, 231, 255, 1), 0 0 15px rgba(0, 231, 255, 1);
     margin: 0 auto;
-    padding: 10px;
+    cursor: pointer;
+    position: absolute;
+  }
+
+  .bnt2List-block {
+    width: $bntWidth;
+    height: $bntHeight;
+    border-radius: 3px;
+    overflow: hidden;
+    position: relative;
     text-align: center;
+    span:nth-child(1) {
+      top: 0;
+      width: 100%;
+      height: $width;
+      background: linear-gradient(90deg, transparent, #03e9f4);
+      box-shadow: 0 0 5px rgb(101, 245, 245);
+      position: absolute;
+      z-index: 1;
+    }
+    span:nth-child(2) {
+      right: 0;
+      height: 100%;
+      width: $width;
+      background: linear-gradient(180deg, transparent, #03e9f4);
+      box-shadow: 0 0 5px rgb(101, 245, 245);
+      position: absolute;
+      z-index: 1;
+    }
+    span:nth-child(3) {
+      bottom: 0;
+      width: 100%;
+      height: $width;
+      background: linear-gradient(270deg, transparent, #03e9f4);
+      box-shadow: 0 0 5px rgb(101, 245, 245);
+      position: absolute;
+      z-index: 1;
+    }
+
+    span:nth-child(4) {
+      left: 0;
+      height: 100%;
+      width: $width;
+      background: linear-gradient(360deg, transparent, #03e9f4);
+      box-shadow: 0 0 5px rgb(101, 245, 245);
+      position: absolute;
+      z-index: 1;
+    }
+
+    p {
+      width: $bntWidth;
+      height: $bntHeight;
+      color: rgb(255, 255, 255);
+      margin: 0 auto;
+      padding: 10px;
+      text-shadow: 0 0 3px rgb(129, 215, 255), 0 0 5px rgb(129, 215, 255), 0 0 8px rgb(129, 215, 255);
+      position: absolute;
+    }
   }
 }
 #coinBlock {
