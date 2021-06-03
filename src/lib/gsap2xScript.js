@@ -6,6 +6,7 @@ import './Physics2DPlugin'
 const SteppedEase = TweenMax.SteppedEase
 
 export function CoinAnimation(){
+ 
   const coinRef = useRef(null)
   useEffect(() =>{
     TweenMax.to('#coin', 0.4, { 

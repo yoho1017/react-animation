@@ -5,16 +5,21 @@
 .App {
   text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  background: rgb(27, 24, 34);
 }
 .header-block {
   margin: 5px;
   width: 480px;
   height: 400px;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(255, 255, 255);
   border: 1px solid black;
+  position: relative;
 }
 
 .black {
@@ -24,6 +29,8 @@
 
 .bnt1 {
   outline: none;
+  width: 200px;
+  height: 50px;
   padding: 10px;
   border: 1px solid rgb(101, 245, 245);
   color: rgb(77, 50, 151);
@@ -36,7 +43,6 @@ $bntWidth: 100px;
 $bntHeight: 45px;
 .bnt2-block {
   background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 35, 223, 0.5) 100%);
-  transform: translateY(250px);
   margin: 0 auto;
   width: $bntWidth;
   height: $bntHeight;
@@ -107,7 +113,36 @@ $bntHeight: 45px;
     }
   }
 }
+
 #coinBlock {
   width: 128px;
+  height: 128px;
   overflow: hidden;
+}
+
+.bnt3-block {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  h1.title {
+    z-index: 4;
+    color: antiquewhite;
+    position: absolute;
+  }
+  .bnt3img {
+    position: absolute;
+    width: 100%;  
+    z-index: 2;
+  }
+  
+}
+
+.coinBlock-random {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  transform: scale(1);
 }
