@@ -149,4 +149,29 @@
   overflow: hidden;
   transform: scale(1);
 }
+
+.ui-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #424242;
+}
+
+.ui-block:hover {
+  cursor: pointer;
+}
+
+.ui-block .ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.ui-block .ball img {
+  width: 100%;
+}
 /*# sourceMappingURL=App.css.map */

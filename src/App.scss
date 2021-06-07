@@ -146,3 +146,25 @@ $bntHeight: 45px;
   overflow: hidden;
   transform: scale(1);
 }
+
+.ui-block{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgb(66, 66, 66);
+  &:hover{
+    cursor: pointer;
+  }
+ .ball{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  img{
+    width: 100%;   
+  }
+ }
+}
