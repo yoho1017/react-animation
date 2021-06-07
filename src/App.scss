@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: rgb(27, 24, 34);
+  background: rgb(32, 34, 24);
 }
 .header-block {
   margin: 5px;
@@ -17,8 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
   position: relative;
 }
 
@@ -27,28 +25,24 @@
   background-color: black;
 }
 
-.bnt1 {
+.btn1 {
   outline: none;
-  width: 200px;
-  height: 50px;
   padding: 10px;
-  border: 1px solid rgb(101, 245, 245);
-  color: rgb(77, 50, 151);
-  background-color: rgb(91, 224, 224);
-  border-radius: 20px;
+  cursor: pointer;
+  background-color: rgb(109, 245, 255);
+  border-radius: 10px;
 }
 
 $width: 3px;
 $bntWidth: 100px;
 $bntHeight: 45px;
-.bnt2-block {
+.btn2-block {
   background: linear-gradient(0deg, rgba(0, 172, 238, 1) 0%, rgba(2, 35, 223, 0.5) 100%);
   margin: 0 auto;
   width: $bntWidth;
   height: $bntHeight;
   border-radius: 3px;
   position: relative;
-
   :hover {
     background: linear-gradient(0deg, rgb(2, 243, 251) 0%, rgb(105, 133, 255) 100%);
     box-shadow: 0 0 5px rgba(0, 231, 255, 1), 0 0 15px rgba(0, 231, 255, 1);
@@ -57,7 +51,7 @@ $bntHeight: 45px;
     position: absolute;
   }
 
-  .bnt2List-block {
+  .btn2List-block {
     width: $bntWidth;
     height: $bntHeight;
     border-radius: 3px;
@@ -120,7 +114,7 @@ $bntHeight: 45px;
   overflow: hidden;
 }
 
-.bnt3-block {
+.btn3-block {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -131,7 +125,7 @@ $bntHeight: 45px;
     color: antiquewhite;
     position: absolute;
   }
-  .bnt3img {
+  .btn3img {
     position: absolute;
     width: 100%;  
     z-index: 2;

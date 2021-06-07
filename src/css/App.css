@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: #1b1822;
+  background: #202218;
 }
 
 .header-block {
@@ -19,8 +19,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  border: 1px solid black;
   position: relative;
 }
 
@@ -29,18 +27,15 @@
   background-color: black;
 }
 
-.bnt1 {
+.btn1 {
   outline: none;
-  width: 200px;
-  height: 50px;
   padding: 10px;
-  border: 1px solid #65f5f5;
-  color: #4d3297;
-  background-color: #5be0e0;
-  border-radius: 20px;
+  cursor: pointer;
+  background-color: #6df5ff;
+  border-radius: 10px;
 }
 
-.bnt2-block {
+.btn2-block {
   background: linear-gradient(0deg, #00acee 0%, rgba(2, 35, 223, 0.5) 100%);
   margin: 0 auto;
   width: 100px;
@@ -49,7 +44,7 @@
   position: relative;
 }
 
-.bnt2-block :hover {
+.btn2-block :hover {
   background: linear-gradient(0deg, #02f3fb 0%, #6985ff 100%);
   box-shadow: 0 0 5px #00e7ff, 0 0 15px #00e7ff;
   margin: 0 auto;
@@ -57,7 +52,7 @@
   position: absolute;
 }
 
-.bnt2-block .bnt2List-block {
+.btn2-block .btn2List-block {
   width: 100px;
   height: 45px;
   border-radius: 3px;
@@ -66,7 +61,7 @@
   text-align: center;
 }
 
-.bnt2-block .bnt2List-block span:nth-child(1) {
+.btn2-block .btn2List-block span:nth-child(1) {
   top: 0;
   width: 100%;
   height: 3px;
@@ -76,7 +71,7 @@
   z-index: 1;
 }
 
-.bnt2-block .bnt2List-block span:nth-child(2) {
+.btn2-block .btn2List-block span:nth-child(2) {
   right: 0;
   height: 100%;
   width: 3px;
@@ -86,7 +81,7 @@
   z-index: 1;
 }
 
-.bnt2-block .bnt2List-block span:nth-child(3) {
+.btn2-block .btn2List-block span:nth-child(3) {
   bottom: 0;
   width: 100%;
   height: 3px;
@@ -96,7 +91,7 @@
   z-index: 1;
 }
 
-.bnt2-block .bnt2List-block span:nth-child(4) {
+.btn2-block .btn2List-block span:nth-child(4) {
   left: 0;
   height: 100%;
   width: 3px;
@@ -106,7 +101,7 @@
   z-index: 1;
 }
 
-.bnt2-block .bnt2List-block p {
+.btn2-block .btn2List-block p {
   width: 100px;
   height: 45px;
   color: white;
@@ -122,7 +117,7 @@
   overflow: hidden;
 }
 
-.bnt3-block {
+.btn3-block {
   width: 300px;
   display: flex;
   justify-content: center;
@@ -130,13 +125,13 @@
   position: relative;
 }
 
-.bnt3-block h1.title {
+.btn3-block h1.title {
   z-index: 4;
   color: antiquewhite;
   position: absolute;
 }
 
-.bnt3-block .bnt3img {
+.btn3-block .btn3img {
   position: absolute;
   width: 100%;
   z-index: 2;
