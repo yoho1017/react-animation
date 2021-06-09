@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
-import coin from '../imgs/coin.png'
-import * as TweenMax from './TweenMax'
-import './Physics2DPlugin'
+import coin from '../../../imgs/coin.png'
+import * as TweenMax from '../TweenMax'
+import '../Physics2DPlugin'
 
 const SteppedEase = TweenMax.SteppedEase
 

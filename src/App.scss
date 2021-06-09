@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: rgb(32, 34, 24);
+  background: rgb(88, 88, 88);
 }
 .header-block {
   margin: 5px;
@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  border: 1px solid black;
 }
 
 .black {
@@ -127,10 +128,9 @@ $bntHeight: 45px;
   }
   .btn3img {
     position: absolute;
-    width: 100%;  
+    width: 100%;
     z-index: 2;
   }
-  
 }
 
 .coinBlock-random {
@@ -141,7 +141,7 @@ $bntHeight: 45px;
   transform: scale(1);
 }
 
-.ui-block{
+.ui-block {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,15 +150,34 @@ $bntHeight: 45px;
   height: 60px;
   border-radius: 50%;
   background: rgb(66, 66, 66);
-  &:hover{
+  &:hover {
     cursor: pointer;
   }
- .ball{
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  img{
-    width: 100%;   
+  .ball {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    img {
+      width: 100%;
+    }
   }
- }
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.item {
+  width: 56%;
+  overflow: visible;
+  stroke: rgb(114, 199, 255);
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }

@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: #202218;
+  background: #585858;
 }
 
 .header-block {
@@ -20,6 +20,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  border: 1px solid black;
 }
 
 .black {
@@ -168,5 +169,24 @@
 
 .ui-block .ball img {
   width: 100%;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+}
+
+.item {
+  width: 56%;
+  overflow: visible;
+  stroke: #72c7ff;
+  stroke-width: 4;
+  stroke-linejoin: round;
+  stroke-linecap: round;
 }
 /*# sourceMappingURL=App.css.map */

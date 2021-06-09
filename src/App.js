@@ -1,17 +1,19 @@
 import React from 'react'
 import './css/App.css'
-import { Btn01Example, Btn02Example, CoinExample,UiExample} from './lib/gsap3xScript'
-// import { CoinAnimation } from './lib/gsap2xScript'
+import { BackgroundToggleExample } from './lib/gsap3/component/BackgroundToggleExample'
+import { StreamerButtonsExample } from './lib/gsap3/component/StreamerButtonsExample'
+import { CoinParticlesExample } from './lib/gsap3/component/CoinParticlesExample'
+import { BallsMousemoveExample } from './lib/gsap3/component/BallsMousemoveExample'
+import { Header } from './lib/framerMotion/component/framerComponent'
 
 function App() {
-
   return (
     <div className="App">
-      <Btn01Example />
-      <Btn02Example />
-      <CoinExample title="You win" /> 
-      <UiExample/>
-       {/* <CoinAnimation /> */}
+      <BackgroundToggleExample />
+      <StreamerButtonsExample />
+      <CoinParticlesExample />
+      <BallsMousemoveExample />
+      <Header />
     </div>
   )
 }

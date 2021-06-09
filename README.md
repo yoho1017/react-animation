@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# gsap 語法說明
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### gsap範例寫法
 
-## Available Scripts
+* 基礎寫法
+  ```js
+  //指定物件,在1秒期間位移到x:100px的位置
+  gsap.to(' .el ', { duration:1 , repeat:-1 , x:100 } ) 
+* 進階寫法
+  ```js
+   //如有相同的參數，可以設定預設值
+    const tl = gsap.timeline({
+    defaults:{
+      duration: 1,
+      ease: 'elastic'
+    }})
+    t.to('.box1', { x: 100 })
+     .to('.box2', { y: 100 });
 
-In the project directory, you can run:
+### 常用語法
 
-### `npm start`
+| 語法      | 用途 |
+| --------- | ---- |
+| .to ( '物件' , { 參數 } )| A到B點 |
+| .from ( '物件' , { 參數 } )| B點到A點 |
+| .fromTo( '物件' , { 起始點參數 } , {結束點參數} ) | 起始點到結束點 |
+| .set ( '物件' , { 參數 } ) | 物件直接放到該設定點 |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### 常用參數 [gsap3參數網址](https://greensock.com/cheatsheet/)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| 參數      | 用途 |
+| --------- | ---- |
+| duration | 動態執行時間 |
+| repeat | 動態重複次數，-1為無線循環 |
+| ease | 為速率變化，'none'為平滑曲線|
+| yoyo | 動態是否來回，預設為false |
+| x | x軸位置 |
+| y | y軸位置 |
+| opacity | 透明度 |
+| rotation | 旋轉角度 |
+| CSS語法 | 支援CSS語法，需轉成駝峰式命名 |
+| paused | 是否一開始就執行動態 (預設false) |
+| stagger | 設置動態錯開時間 |
+| ease | 速度變化率 ， 'none' 為平滑度， [參考網站](https://greensock.com/docs/v3/Eases)| 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+   
+  
