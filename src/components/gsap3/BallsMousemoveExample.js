@@ -1,8 +1,8 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
-import football from '../../../imgs/football.png'
-import basketball from '../../../imgs/basketball.png'
-import baseball from '../../../imgs/baseball.png'
+import football from '../../imgs/football.png'
+import basketball from '../../imgs/basketball.png'
+import baseball from '../../imgs/baseball.png'
 
 export const BallsMousemoveExample = () => {
   const BallsMousemove = props => {

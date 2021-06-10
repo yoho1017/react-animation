@@ -177,16 +177,22 @@
   display: flex;
   place-content: center;
   overflow: hidden;
-  background: rgba(255, 255, 255, 0.2);
-  border-radius: 30px;
+  background: rgba(248, 248, 248, 0.2);
 }
 
 .item {
   width: 56%;
   overflow: visible;
   stroke: #72c7ff;
-  stroke-width: 4;
+  stroke-width: 3;
   stroke-linejoin: round;
   stroke-linecap: round;
+}
+
+.Sphere {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background: white;
 }
 /*# sourceMappingURL=App.css.map */

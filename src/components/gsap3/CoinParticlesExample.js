@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import { gsap, SteppedEase } from 'gsap'
-import iconSign from '../../../imgs/iconSign.png'
-import coin from '../../../imgs/coin.png'
+import iconSign from '../../imgs/iconSign.png'
+import coin from '../../imgs/coin.png'
 export const CoinParticlesExample = () => {
   const CoinParticles = props => {
     const coinParticlesRef = useRef(null)
