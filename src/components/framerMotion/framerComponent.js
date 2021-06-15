@@ -20,7 +20,7 @@ export const SphereDeformation = () => {
           rotate: [0, 0, 270, 270, 0],
           borderRadius: ['20%', '20%', '50%', '50%', '20%'],
           background: ['#F05', '#85F', '#0CF'],
-          boxShadow: '0px 0px 10px 10px #fff'
+          boxShadow: ['0px 0px 2px 2px #fff', '0px 0px 5px 5px #fff']
         }}
         transition={{
           duration: 2,

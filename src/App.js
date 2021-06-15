@@ -4,7 +4,8 @@ import { BackgroundToggleExample } from './components/gsap3/BackgroundToggleExam
 import { StreamerButtonsExample } from './components/gsap3/StreamerButtonsExample'
 import { CoinParticlesExample } from './components/gsap3/CoinParticlesExample'
 import { BallsMousemoveExample } from './components/gsap3/BallsMousemoveExample'
-import { SvgPathMovement, SphereDeformation } from './components/framerMotion/framerComponent'
+import { SphereDeformation } from './components/framerMotion/framerComponent'
+import { Navigation } from './components/framerMotion/Navigation'
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <StreamerButtonsExample />
       <CoinParticlesExample />
       <BallsMousemoveExample />
-      <SvgPathMovement />
       <SphereDeformation />
+      <Navigation />
     </div>
   )
 }
