@@ -71,56 +71,6 @@
  <div className="box1" ref={box1Ref}>...</div>
 ```
 
-# Framer Motion 語法說明
- * 基本寫法
-   - 1.需 import { motion } from 'framer-motion'
-   - 2.需使用 framerMotion 的元件都需加入 motion.
-  ```js
-    // 動畫展示要移動到y:100的位置,動畫過場為 1 秒,無限循環,動畫速率曲線為 easeInOut
-      <motion.div
-        className="Sphere"
-        animate={{ y:100 }}             
-        transition={{
-          duration: 1,
-          ease: 'easeInOut',         
-          repeat: Infinity        
-        }}
-      />    
-  ```
-### 常用animate參數 
-#### [animate參數網址](https://www.framer.com/api/motion/animation/)
-| 指令 | 用途 |
-| ---- | ---- |
-| x: |  x 軸位置 |
-| y: |  y 軸位置 |
-| rotate: | 旋轉 |
-| scale: | 大小 |
-| opacity: | 透明度 |
-| CSS語法: | 支援CSS語法，需轉成駝峰式命名 |
-#### [Transition參數網址](https://www.framer.com/api/motion/types/#transition)
-| 指令 | 用途 |
-| ---- | ---- |
-| duration: | 動態執行時間 |
-| delay: | 延遲 |
-| repeat: | 循環次數，Infinity為無限循環 |
-| ease: | 速度變化率，較常用的2種 "linear"，"easeInOut" |
-| from: | 動畫的當前狀態 |
-| time: | times都是0到1之間，動畫關鍵幀|
-| staggerChildren: | 子元件錯開時間 |
-
-### SVG路徑  
-| 指令 | 用途 |
-| ---- | ---- |
-| pathLength: | 改變路徑長度，設置為0和之間的值1 |
-| pathSpacing: | 改變路徑間距，設置為0和之間的值1 |
-| pathOffset: | 改變路徑位移，設置為0和之間的值1 |
-
-### 常用事件語法
-| 指令 | 用途 |
-| ---- | ---- |
-| whileHover: | Hover時動態 |
-| whileTap: | 點擊時動態 |
-| whileFocus: | Focuus時動態 |
 
 ### 常用指令
 | 指令 | 用途 |
