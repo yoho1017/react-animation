@@ -53,6 +53,7 @@ export const MenuItem = ({ i }) => {
               ease: 'linear',
               repeat: Infinity
             }}
+            stroke="url('#gradient')"
             d="M300,89.5c0,5.522-4.478,10-10,10H10c-5.523,0-10-4.478-10-10
                 v-79c0-5.523,4.477-10,10-10h280c5.522,0,10,4.477,10,10V89.5z"
           />

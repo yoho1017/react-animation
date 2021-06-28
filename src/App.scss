@@ -216,13 +216,13 @@ li {
     width: 300px;
     height: 100px;
     background: linear-gradient(#1d3014, #243b55);
-    h3{
+    h3 {
       margin: 0;
       color: rgba(0, 172, 238, 1);
     }
     .icon-placeholder {
       width: 60px;
-      right: 20px; 
+      right: 20px;
       margin: 0;
       z-index: 2;
       position: absolute;
@@ -234,33 +234,32 @@ li {
   }
 }
 
-.svg-block{
+.svg-block {
   position: absolute;
   // stroke:rgba(0, 172, 238, 1);
-  stroke: url('#gradient');
+  // stroke: url('#gradient');
   stroke-width: 3;
-  fill:none;
+  fill: none;
   z-index: 1;
 }
 
-.stagger-ul{
+.stagger-ul {
   display: flex;
   flex-direction: column;
-  .stagger-li{
+  .stagger-li {
     width: 300px;
     height: 50px;
     background: #243b55;
   }
 }
 
-.test-ul{
+.test-ul {
   position: relative;
   display: flex;
-  .test-li{
+  .test-li {
     margin: 0 5px;
     width: 50px;
     height: 50px;
     background: #03e9f4;
   }
 }
-

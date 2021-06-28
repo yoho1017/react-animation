@@ -1,0 +1,336 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.App {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #585858;
+}
+
+.header-block {
+  margin: 5px;
+  width: 480px;
+  height: 400px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border: 1px solid black;
+}
+
+.black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: black;
+}
+
+.btn1 {
+  outline: none;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #6df5ff;
+  border-radius: 10px;
+}
+
+.btn2-block {
+  background: -webkit-gradient(linear, left bottom, left top, from(#00acee), to(rgba(2, 35, 223, 0.5)));
+  background: linear-gradient(0deg, #00acee 0%, rgba(2, 35, 223, 0.5) 100%);
+  margin: 0 auto;
+  width: 100px;
+  height: 45px;
+  border-radius: 3px;
+  position: relative;
+}
+
+.btn2-block :hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#02f3fb), to(#6985ff));
+  background: linear-gradient(0deg, #02f3fb 0%, #6985ff 100%);
+  -webkit-box-shadow: 0 0 5px #00e7ff, 0 0 15px #00e7ff;
+          box-shadow: 0 0 5px #00e7ff, 0 0 15px #00e7ff;
+  margin: 0 auto;
+  cursor: pointer;
+  position: absolute;
+}
+
+.btn2-block .btn2List-block {
+  width: 100px;
+  height: 45px;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.btn2-block .btn2List-block span:nth-child(1) {
+  top: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), to(#03e9f4));
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  -webkit-box-shadow: 0 0 5px #65f5f5;
+          box-shadow: 0 0 5px #65f5f5;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn2-block .btn2List-block span:nth-child(2) {
+  right: 0;
+  height: 100%;
+  width: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#03e9f4));
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  -webkit-box-shadow: 0 0 5px #65f5f5;
+          box-shadow: 0 0 5px #65f5f5;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn2-block .btn2List-block span:nth-child(3) {
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  -webkit-box-shadow: 0 0 5px #65f5f5;
+          box-shadow: 0 0 5px #65f5f5;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn2-block .btn2List-block span:nth-child(4) {
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#03e9f4));
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  -webkit-box-shadow: 0 0 5px #65f5f5;
+          box-shadow: 0 0 5px #65f5f5;
+  position: absolute;
+  z-index: 1;
+}
+
+.btn2-block .btn2List-block p {
+  width: 100px;
+  height: 45px;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  text-shadow: 0 0 3px #81d7ff, 0 0 5px #81d7ff, 0 0 8px #81d7ff;
+  position: absolute;
+}
+
+#coinBlock {
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+}
+
+.btn3-block {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.btn3-block h1.title {
+  z-index: 4;
+  color: antiquewhite;
+  position: absolute;
+}
+
+.btn3-block .btn3img {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+
+.coinBlock-random {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.ui-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #424242;
+}
+
+.ui-block:hover {
+  cursor: pointer;
+}
+
+.ui-block .ball {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+}
+
+.ui-block .ball img {
+  width: 100%;
+}
+
+.container {
+  width: 150px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  overflow: hidden;
+  background: rgba(248, 248, 248, 0.2);
+}
+
+.item {
+  width: 56%;
+  overflow: visible;
+  stroke: #72c7ff;
+  stroke-width: 3;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+}
+
+.Sphere {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 15px;
+  position: absolute;
+}
+
+li {
+  list-style: none;
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+li .text-placeholder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#1d3014), to(#243b55));
+  background: linear-gradient(#1d3014, #243b55);
+}
+
+li .text-placeholder h3 {
+  margin: 0;
+  color: #00acee;
+}
+
+li .text-placeholder .icon-placeholder {
+  width: 60px;
+  right: 20px;
+  margin: 0;
+  z-index: 2;
+  position: absolute;
+}
+
+li .text-placeholder .icon-placeholder img {
+  width: 100%;
+  height: 100%;
+}
+
+.svg-block {
+  position: absolute;
+  stroke-width: 3;
+  fill: none;
+  z-index: 1;
+}
+
+.stagger-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stagger-ul .stagger-li {
+  width: 300px;
+  height: 50px;
+  background: #243b55;
+}
+
+.test-ul {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.test-ul .test-li {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  background: #03e9f4;
+}
+/*# sourceMappingURL=App.css.map */

@@ -28,6 +28,37 @@
         variants={variants} //引入設定好的variants
      />
   ```
+  - 4.也可使用 variants 操作父組件去編排子組件動態
+   ```js
+    const list = {
+      visible: {
+        opacity: 1,
+        transition: {
+          when: "beforeChildren",
+          staggerChildren: 0.3,
+        },
+      },
+      hidden: {
+        opacity: 0,
+        transition: {
+          when: "afterChildren",
+        },
+      },
+    }
+    return (
+      <motion.ul
+        initial="hidden"
+        animate="visible"
+        variants={list}
+        >
+        <motion.li/>
+        <motion.li/>
+        <motion.li/>
+      </motion.ul>
+    ) 
+   ```
+  - 5.exit 為退出動畫，須使用 AnimatePresence 模組
+  - 6.API
 ### 常用animate參數 
 #### [animate參數網址](https://www.framer.com/api/motion/animation/)
 | 指令 | 用途 |
@@ -48,6 +79,7 @@
 | from: | 動畫的當前狀態 |
 | time: | times都是0到1之間，動畫關鍵幀|
 | staggerChildren: | 子元件錯開時間 |
+| type | 動態型態有 過渡／彈簧/慣性 三種 "tween" / "spring" / "inertia" |
 
 ### SVG路徑  
 | 指令 | 用途 |
@@ -56,9 +88,10 @@
 | pathSpacing: | 改變路徑間距，設置為0和之間的值1 |
 | pathOffset: | 改變路徑位移，設置為0和之間的值1 |
 
-### 常用事件語法
+### 觸發事件語法
 | 指令 | 用途 |
 | ---- | ---- |
 | whileHover: | Hover時動態 |
 | whileTap: | 點擊時動態 |
 | whileFocus: | Focuus時動態 |
+| whileDrag : | 拖曳 |
